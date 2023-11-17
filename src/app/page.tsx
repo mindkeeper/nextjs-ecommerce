@@ -1,11 +1,9 @@
-import Nav from '@/components/Navbar';
 import { Button } from '@/components/ui/button';
 
 export default function Home() {
   return (
-    <main className="p-10">
-      <Nav />
-      <section className="py-6 flex flex-col gap-4 items-center text-center">
+    <>
+      <section className="flex flex-col items-center gap-4 py-6 text-center">
         <h1 className="text-4xl font-bold">Shadcn? More Like Chadcn</h1>
         <p className="text-2xl text-muted-foreground">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
@@ -14,10 +12,10 @@ export default function Home() {
           dolorum dignissimos.
         </p>
       </section>
-      <div className="gap-6 flex py-6 items-center justify-center">
+      <div className="flex items-center justify-center gap-6 py-6">
         <Button>Learn More</Button>
         <Button>Enroll</Button>
       </div>
-    </main>
+    </>
   );
 }
